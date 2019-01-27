@@ -34,7 +34,7 @@
 	<h1 id ="text3"> Bankovni racun </h1>
 	<h1 id ="text4"> Bitcoin </h1>
 	<form>
-  		<input type="text" id = "bam" name="bam" >
+  		<input type="text" id = "bam" name="bam">
 		<p id ="f1"> BAM </p>
 		<input type="text" id = "bitcoin" name="bitcoin" >
 		<p id ="f2"> BTC </p>
@@ -57,8 +57,26 @@
 	<p id = "skini"><a href="https://crypto-mjenjacnica.neocities.org/dokumentacija.pdf" target="_blank">Skinite dokumentaciju</a></p>
 	<h1 id="pocetak"><a href="mijenjaj.html"> Vrati se na pocetak</a></h1>		
 </div>
-
+<canvas class="snow"></canvas>
 <script src="js/skripta.js"></script>
+<script src="js/snow.js"></script>
+<script>
+	let bam = document.querySelector('#bam');
+	bam.addEventListener('keydown',changeBitcoin);
+	bam.addEventListener('blur',()=>{
+	    document.querySelector('#bitcoin').value="";
+	    document.querySelector('#bam').value="";
+	});
+	function changeBitcoin(event){
+        let broj = parseInt(bam.value);
+        let bitcoin = (broj/2)*0.0003215864;
+        if(isNaN(bitcoin)){
+            document.querySelector('#bitcoin').value = "Premala vrijednost BAM-a";
+            return;
+		}
+        document.querySelector('#bitcoin').value = bitcoin;
+    }
+</script>
 </body>
 
 </html>

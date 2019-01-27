@@ -23,7 +23,6 @@
  
 
   <body>
-
       <div class="header">
           <img id = "logo" src = "slike/logo.png" alt="LOGO" >
           <img id = "meni" src ="slike/meni.png" alt = "MENI">
@@ -35,23 +34,17 @@
           </ul>
           
         </div>
-          
-         
 
-      
+      <canvas class="snow"></canvas>
       
       <div id="login">
-      
-      <h3 style="text-align: center;">LOGIN FORMA </h3> 
+      <h3 style="text-align: center;">LOGIN FORMA </h3>
       <p> Ukoliko nemate racun, vas racun ce biti napravljen i bit cete logovani</p>
       <p> Ukoliko imate racun, s ispravnim email-om i passwordom bit cete logovani</p>
       <input type="email" placeholder="Unesite vas e-mail" id="email">
       <input type"password" placeholder="Password najmanje 6 karaktera" id="pass">
       <a href="index.html" id="loguj" onclick="login()"> Login </a>
       </div>
-     
-      
-      
       <script>
         // Initialize Firebase
         var config = {
@@ -107,6 +100,6 @@
  
 
   </script>
-
+    <script src="js/snow.js"></script>
   </body>
 </html>

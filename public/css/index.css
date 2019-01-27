@@ -1,0 +1,141 @@
+#logo {
+	height: 45px;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+}
+ul {
+	position: absolute;
+	right: 50px;
+    list-style-type: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+
+    float: left;
+}
+
+li a {
+	display: block;
+    padding: 30px;
+    text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+#pozadina {
+	position: absolute;
+	right: 0;
+}
+
+#laptop {
+	position: absolute;
+	top: 250px;
+	right: 50px;
+	width : 700px;
+	height: 600px;
+}
+#video {
+	display: none;
+	position: absolute;
+	top: 285px;
+	right: 130px;
+	width: 530px;
+	height: 360px;
+}
+span {
+	    color: #16d0c5;
+}
+
+#text1 {
+	font-size: 50px;
+	position: absolute;
+	top: 320px;
+	left: 120px;
+	color: #20509e;
+	font-family: "Futura", sans-serif;
+	line-height: 1.2;
+}
+
+#text2 {
+	position: absolute;
+	top: 480px;
+	left: 120px;
+	color: #75849a;
+	font-size: 22px;
+	line-height: 1.2;
+}
+
+#logo1 {
+	position: absolute;
+	top: 1000px;
+	left: 170px;
+}
+
+#p1 {
+	position: absolute;
+	top: 1050px;
+	left: 100px;
+	font-size: 15.7px;
+    	color: #75849a;
+   	line-height: 1.6;
+	font-family: "Lato", sans-serif;
+	margin-bottom: 80px;
+}
+
+
+#h1 {
+	position: absolute;
+	top: 980px;
+	left: 600px;
+	color: #20509e;
+	font-size: 25px;
+}
+
+#dokum {
+	position: absolute;
+	top: 980px;
+	right: 450px;
+	color: #20509e;
+	font-size: 25px;
+}
+
+#skini {
+	position: absolute;
+	top: 1040px;
+	right: 460px;
+	font-size: 15.7px;
+    	color: #75849a;
+   	line-height: 1.6;
+	font-family: "Lato", sans-serif;
+}	
+
+#linkovi {
+	position: absolute;
+	top: 1040px;
+	left: 600px;
+	font-size: 15.7px;
+    	color: #75849a;
+   	line-height: 1.6;
+	font-family: "Lato", sans-serif;
+}
+#pocetak {
+	position: absolute;
+	top: 1150px;
+	left: 650px;
+	color: #20509e;
+	font-size: 21px;
+	line-height: 1.6;
+	font-family: "Lato", sans-serif;
+}
+a:link {
+	text-decoration: none;
+	
+}
+
+
+
+

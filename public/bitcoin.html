@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>CRYPTO | Bitcoin mjenjacnica</title>
+<link rel="stylesheet" href="css/bitcoin.css">
+<link rel="icon" type="image/png" href="slike/logo.png" />
+
+</head>
+
+<body>
+
+<div class="header">
+	<img id = "logo" src = "slike/logo.png" alt="LOGO" >
+	<img id = "meni" src ="slike/meni.png" alt = "MENI">
+	<ul>
+ 	 	<li><a href="index.html">Pocetna</a></li>
+		<li><a href="mijenjaj.html">Mijenjaj</a></li>
+  		<li><a href="bitcoin.html">Bitcoin</a></li>
+  		<li><a href="#p1">O nama</a></li>
+	</ul>
+	
+</div>
+
+<div class = "bitcoin" >
+	<img id = "bitcoin" src = "slike/bitcoin0.jpg" alt ="BITCOIN" >
+	<h2 id = "text1">Sta je Bitcoin</h2>
+	<p id = "text2" >Bitcoin je digitalni novac, stvoren i cuvan elektronicki. Bitcoin nije printan i nije kontroliran od<br> strane bilo koga.
+	Proizvode ga brojni ljudi pomocu racunara u cijelom svijetu koristeci software<br> koji rjesava matematicke probleme.Bitcoin je prvi primjer ovakve valute nazvane kriptovaluta.<br>Bitcoin se koristi za kupovinu u elektronickom obliku. Medjutim, bitcoinova najznacajnija karakteristika<br> i ujedno najveca razlika od ostalih valuta jest sto je decentraliziran. Niti jedna institucija ne kontrolira<br> bitcoin mrezu.Bitcoin je nastao kao produkt ideje software developera Satoshi Nakamoto-a :<br> elektronicko placanje na temelju matematickih dokaza. Ideja mu je bila stvaranje valute bez<br> centralne vlasti. Zbog toga bitcoin ne izdaje nitko.Bitcoin nije fizicki izdan u sjeni centralnih banaka,<br> gdje ga ljudi ne mogu prebrojati i gdje banke postavljaju svoja pravila. Umjesto toga, bitcoin je <br>stvoren digitalno, od strane zajednice kojoj se svatko moze pridruziti. Bitcoin protokol, tj. algoritam <br>pomocu kojeg cijeli sustav funkcionira, ogranicen je na izdaju 21 milijuna bitcoinova. </p>
+</div>
+
+<div class = "mreza">
+	<h2 id = "text3" >Postanite dio Bitcoin mreze</h2>
+	<p id = "text4">Jednostavan, siguran i brz put do Vaseg prvog digitalnog novca! </p>
+
+<div class = "korak1">
+	<img id ="korak1" src = "slike/korak1.png" alt = "KORAK1" >
+	<h4 id = "text5">Napravite digitalni novcanik</h4>
+	<p id = "text6">Kritpovalutni novcanik je sigurnosni digitalni<br> novcanik koji se koristi za skladistenje, slanje<br> i primanje digitalnih valuta kao sto je bitcoin. </p>
+</div>
+
+<div class ="strelica1">
+	<img id ="strelica1" src="slike/strelica.png" alt ="STRELICA">
+</div>
+
+<div class ="korak2">
+	<img id ="korak2" src ="slike/korak2.png" alt ="KORAK2">
+	<h4 id ="text7">Spremite prvi bitcoin</h4>
+	<p id ="text8">Bilo da ste ga kupili ili dobili, Vas<br> bitcoin mora bii na sigurnoj lokaciji. </p>
+</div>
+
+<div class ="strelica2">
+	<img id ="strelica2" src="slike/strelica.png" alt ="STRELICA">
+</div>
+
+<div class ="korak3">
+	<img id ="korak3" src="slike/korak3.png" alt="KORAK3">	
+	<h4 id ="text9">Izvrsite prvu transakciju</h4>
+	<p id ="text10">Zahvaljujuci Blockchain tehnologiji,<br> Vasa transakcija je sigurna.</p>
+</div>
+
+<div class = "footer">
+	<img id = "logo1" src = "slike/logo.png" alt="LOGO" >	
+	<p id = "p1" >CRYPTO je prva Bitcoin mjenjacnica u <br>Sarajevu gdje mozete kupiti ili prodati <br> bitcoin.</p>
+	<h1 id = "h1" > Pratite nas </h1>
+	<p id ="linkovi"><a href="https://github.com/beelmin" target="_blank">Ruhotina Belmin</a><br><a href="https://github.com/kr3s0" target="_blank">Kreso Tarik</a></p>
+	<h1 id ="dokum"> Dokumentacija </h1>
+	<p id = "skini"><a href="https://crypto-mjenjacnica.neocities.org/dokumentacija.pdf" target="_blank">Skinite dokumentaciju</a></p>
+	<h1 id="pocetak"><a href="bitcoin.html"> Vrati se na pocetak</a></h1>		
+</div>
+
+
+
+<script>
+
+var ciklus = setInterval(tajmer,1500);
+
+function tajmer() {
+
+	var number = Math.floor(Math.random()*7);
+	var izvor = "slike/bitcoin" + number.toString() + ".jpg";
+	document.getElementById("bitcoin").src = izvor;
+
+
+}
+
+</script>
+
+</body>
+
+</html>

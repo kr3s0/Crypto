@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRYPTO | Bitcoin mjenjacnica</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="icon" type="image/png" href="slike/logo.png" />
+
+ <!-- update the version number as needed -->
+ <script defer src="/__/firebase/5.8.1/firebase-app.js"></script>
+ <!-- include only the Firebase features as you need -->
+ <script defer src="/__/firebase/5.8.1/firebase-auth.js"></script>
+ <script defer src="/__/firebase/5.8.1/firebase-database.js"></script>
+ <script defer src="/__/firebase/5.8.1/firebase-messaging.js"></script>
+ <script defer src="/__/firebase/5.8.1/firebase-storage.js"></script>
+ <!-- initialize the SDK after all desired features are loaded -->
+ <script defer src="/__/firebase/init.js"></script>
+
+
+
+</head>
+
+<body>
+
+<div class="header">
+	<img id = "logo" src = "slike/logo.png" alt="LOGO" >
+	<img id = "pozadina" src = "slike/pozadina.png" alt = "POZADINA" >
+	<ul>
+ 	 	<li><a href="index.html">Pocetna</a></li>
+		<li><a href="mijenjaj.html">Mijenjaj</a></li>
+  		<li><a href="bitcoin.html">Bitcoin</a></li>
+		<li><a href="#p1">O nama</a></li>
+		<li><a href="login.html">Prijavi se</a></li>
+		<li><a href="" onclick="Odjavi()">Odjavi se</a></li>
+  		
+	</ul>
+	
+	<img onmouseover="document.getElementById('video').style.display = 'block';" id = "laptop" src = "slike/laptop.png" alt = "LAPTOP" >
+	<h2 id = "text1" >Investirajte u <span>Bitcoin</span> <br>Bitcoin Transakcije</h2>
+	<h4 id = "text2" >Uz pomoc modernih Blockchain tehnologija zaradite novac</h4>
+	<iframe id="video" src="https://www.youtube.com/embed/ghKM96xonGE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+
+	  
+    
+
+<div class = "footer">
+	<img id = "logo1" src = "slike/logo.png" alt="LOGO" >	
+	<p id = "p1" >CRYPTO je prva Bitcoin mjenjacnica u <br>Sarajevu gdje mozete kupiti ili prodati <br> bitcoin.</p>
+	<h1 id = "h1" > Pratite nas </h1>
+	<p id ="linkovi"><a href="https://github.com/beelmin" target="_blank">Ruhotina Belmin</a><br><a href="https://github.com/kr3s0" target="_blank">Kreso Tarik</a></p>
+	<h1 id ="dokum"> Dokumentacija </h1>
+	<p id = "skini"><a href="https://crypto-mjenjacnica.neocities.org/dokumentacija.pdf" target="_blank">Skinite dokumentaciju</a></p>
+	<h1 id="pocetak"><a href="index.html"> Vrati se na pocetak</a></h1>		
+</div>
+
+
+
+
+<script>
+	// Initialize Firebase
+	var config = {
+	  apiKey: "AIzaSyD0i86-QTIV3lXXydmZGUoHOIAhh96RmK0",
+	  authDomain: "testproject-269ac.firebaseapp.com",
+	  databaseURL: "https://testproject-269ac.firebaseio.com",
+	  projectId: "testproject-269ac",
+	  storageBucket: "testproject-269ac.appspot.com",
+	  messagingSenderId: "20351082278"
+	};
+	firebase.initializeApp(config);
+ 
+  </script>
+
+
+<script>
+
+	function Odjavi(){
+
+		if(firebase.auth().currentUser != null) {
+
+			firebase.auth().signOut().then(function() {
+            // Sign-out successful.
+           
+        	}).catch(function(error) {
+              // An error happened.
+        	});
+
+			window.alert("Uspjesno ste se odjavili");
+
+		}
+
+	}
+
+</script>
+
+
+</body>
+
+</html>
